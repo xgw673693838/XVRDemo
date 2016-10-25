@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ym-uC-0iw" customClass="GCSVideoView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZT-Ws-YC0">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Le7-RW-5Wu">
+                                        <frame key="frameInset" minX="8" minY="8" width="300" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0k1-dv-ePq">
+                                        <frame key="frameInset" minX="318" minY="7" width="51" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="ChangedURLSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="XyA-LC-b5j"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZZT-Ws-YC0" firstAttribute="top" secondItem="3ym-uC-0iw" secondAttribute="bottom" id="DQU-Ag-t4B"/>
+                            <constraint firstItem="ZZT-Ws-YC0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Edm-1V-VaP"/>
+                            <constraint firstItem="3ym-uC-0iw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="98" id="FDt-fN-wAA"/>
+                            <constraint firstAttribute="trailing" secondItem="ZZT-Ws-YC0" secondAttribute="trailing" id="b8G-BS-uS1"/>
+                            <constraint firstItem="3ym-uC-0iw" firstAttribute="trailing" secondItem="ZZT-Ws-YC0" secondAttribute="trailing" id="bEi-zx-FL0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZZT-Ws-YC0" secondAttribute="bottom" constant="340" id="gLq-0K-0Uy"/>
+                            <constraint firstItem="3ym-uC-0iw" firstAttribute="leading" secondItem="ZZT-Ws-YC0" secondAttribute="leading" id="wcl-7r-nEv"/>
+                            <constraint firstAttribute="bottom" secondItem="3ym-uC-0iw" secondAttribute="bottom" constant="378" id="wrH-We-LtU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="URLSwitch" destination="0k1-dv-ePq" id="DFS-vd-7Tl"/>
+                        <outlet property="URLText" destination="Le7-RW-5Wu" id="DDC-R7-7Dy"/>
+                        <outlet property="VRPlayerView" destination="3ym-uC-0iw" id="6tS-JH-LPP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>

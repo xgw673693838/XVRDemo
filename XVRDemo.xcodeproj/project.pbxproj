@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4683D6B9DB4F8CB6038AAC66 /* libPods-XVRDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6EB47A63BC19FC7A697A15 /* libPods-XVRDemo.a */; };
+		F5A0EAAE1DBE17540075B80E /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = F5A0EAAD1DBE17540075B80E /* podfile */; };
+		F5A0EAB01DBE175B0075B80E /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = F5A0EAAF1DBE175B0075B80E /* podfile */; };
+		F5A0EAB71DBE1DF40075B80E /* PlayControlBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0EAB61DBE1DF40075B80E /* PlayControlBar.m */; };
+		F5D2FBB11DBF1D2A00F13123 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D2FBB01DBF1D2A00F13123 /* Utils.m */; };
+		F5D80CC91DBE2D2600C7B845 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D80CC81DBE2D2600C7B845 /* UIView+Frame.m */; };
 		F5FD67E91DBDEEBE002006AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD67E81DBDEEBE002006AD /* main.m */; };
 		F5FD67EC1DBDEEBE002006AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD67EB1DBDEEBE002006AD /* AppDelegate.m */; };
 		F5FD67EF1DBDEEBE002006AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD67EE1DBDEEBE002006AD /* ViewController.m */; };
@@ -35,6 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C6EB47A63BC19FC7A697A15 /* libPods-XVRDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XVRDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A0A17F30759431655E80CC /* Pods-XVRDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XVRDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XVRDemo/Pods-XVRDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B1B17A95418BDB76F8B22E80 /* Pods-XVRDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XVRDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XVRDemo/Pods-XVRDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F5A0EAAD1DBE17540075B80E /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		F5A0EAAF1DBE175B0075B80E /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		F5A0EAB51DBE1DF40075B80E /* PlayControlBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayControlBar.h; sourceTree = "<group>"; };
+		F5A0EAB61DBE1DF40075B80E /* PlayControlBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayControlBar.m; sourceTree = "<group>"; };
+		F5D2FBAF1DBF1D2A00F13123 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F5D2FBB01DBF1D2A00F13123 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		F5D80CC71DBE2D2600C7B845 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		F5D80CC81DBE2D2600C7B845 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		F5FD67E41DBDEEBE002006AD /* XVRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XVRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FD67E81DBDEEBE002006AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5FD67EA1DBDEEBE002006AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4683D6B9DB4F8CB6038AAC66 /* libPods-XVRDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +96,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49804E5B5E8BC7BEDE95A4BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99A0A17F30759431655E80CC /* Pods-XVRDemo.debug.xcconfig */,
+				B1B17A95418BDB76F8B22E80 /* Pods-XVRDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EFCD6190CEC8392FAB05B11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0EAAD1DBE17540075B80E /* podfile */,
+				4C6EB47A63BC19FC7A697A15 /* libPods-XVRDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5A0EAB11DBE17A60075B80E /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MainViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F5A0EAB21DBE17FC0075B80E /* PublicView */ = {
+			isa = PBXGroup;
+			children = (
+				F5A0EAB51DBE1DF40075B80E /* PlayControlBar.h */,
+				F5A0EAB61DBE1DF40075B80E /* PlayControlBar.m */,
+			);
+			name = PublicView;
+			sourceTree = "<group>";
+		};
+		F5A0EAB31DBE17FE0075B80E /* PublicClass */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2FBAF1DBF1D2A00F13123 /* Utils.h */,
+				F5D2FBB01DBF1D2A00F13123 /* Utils.m */,
+			);
+			name = PublicClass;
+			sourceTree = "<group>";
+		};
+		F5A0EAB41DBE18810075B80E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		F5D80CC61DBE2CC100C7B845 /* Created */ = {
+			isa = PBXGroup;
+			children = (
+				F5D80CC71DBE2D2600C7B845 /* UIView+Frame.h */,
+				F5D80CC81DBE2D2600C7B845 /* UIView+Frame.m */,
+			);
+			name = Created;
+			sourceTree = "<group>";
+		};
 		F5FD67DB1DBDEEBE002006AD = {
 			isa = PBXGroup;
 			children = (
+				F5A0EAAF1DBE175B0075B80E /* podfile */,
 				F5FD67E61DBDEEBE002006AD /* XVRDemo */,
 				F5FD68001DBDEEBF002006AD /* XVRDemoTests */,
 				F5FD680B1DBDEEBF002006AD /* XVRDemoUITests */,
 				F5FD67E51DBDEEBE002006AD /* Products */,
+				7EFCD6190CEC8392FAB05B11 /* Frameworks */,
+				49804E5B5E8BC7BEDE95A4BA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +182,11 @@
 		F5FD67E61DBDEEBE002006AD /* XVRDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F5D80CC61DBE2CC100C7B845 /* Created */,
+				F5A0EAB41DBE18810075B80E /* CoreData */,
+				F5A0EAB31DBE17FE0075B80E /* PublicClass */,
+				F5A0EAB21DBE17FC0075B80E /* PublicView */,
+				F5A0EAB11DBE17A60075B80E /* MainViewController */,
 				F5FD67EA1DBDEEBE002006AD /* AppDelegate.h */,
 				F5FD67EB1DBDEEBE002006AD /* AppDelegate.m */,
 				F5FD67ED1DBDEEBE002006AD /* ViewController.h */,
@@ -147,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5FD68111DBDEEBF002006AD /* Build configuration list for PBXNativeTarget "XVRDemo" */;
 			buildPhases = (
+				2D8A4D4295B3C12D3285BE09 /* [CP] Check Pods Manifest.lock */,
 				F5FD67E01DBDEEBE002006AD /* Sources */,
 				F5FD67E11DBDEEBE002006AD /* Frameworks */,
 				F5FD67E21DBDEEBE002006AD /* Resources */,
+				84D64841A2E26C714322E605 /* [CP] Embed Pods Frameworks */,
+				02D81464B89C5C5C4B39027A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +340,8 @@
 			files = (
 				F5FD67F71DBDEEBE002006AD /* LaunchScreen.storyboard in Resources */,
 				F5FD67F41DBDEEBE002006AD /* Assets.xcassets in Resources */,
+				F5A0EAB01DBE175B0075B80E /* podfile in Resources */,
+				F5A0EAAE1DBE17540075B80E /* podfile in Resources */,
 				F5FD67F21DBDEEBE002006AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +362,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02D81464B89C5C5C4B39027A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XVRDemo/Pods-XVRDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D8A4D4295B3C12D3285BE09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84D64841A2E26C714322E605 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XVRDemo/Pods-XVRDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5FD67E01DBDEEBE002006AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -279,6 +418,9 @@
 				F5FD67EF1DBDEEBE002006AD /* ViewController.m in Sources */,
 				F5FD67EC1DBDEEBE002006AD /* AppDelegate.m in Sources */,
 				F5FD67E91DBDEEBE002006AD /* main.m in Sources */,
+				F5D2FBB11DBF1D2A00F13123 /* Utils.m in Sources */,
+				F5D80CC91DBE2D2600C7B845 /* UIView+Frame.m in Sources */,
+				F5A0EAB71DBE1DF40075B80E /* PlayControlBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +565,7 @@
 		};
 		F5FD68121DBDEEBF002006AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A0A17F30759431655E80CC /* Pods-XVRDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G237AHD53M;
@@ -435,6 +578,7 @@
 		};
 		F5FD68131DBDEEBF002006AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B17A95418BDB76F8B22E80 /* Pods-XVRDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G237AHD53M;
@@ -514,6 +658,7 @@
 				F5FD68131DBDEEBF002006AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5FD68141DBDEEBF002006AD /* Build configuration list for PBXNativeTarget "XVRDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +667,7 @@
 				F5FD68161DBDEEBF002006AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5FD68171DBDEEBF002006AD /* Build configuration list for PBXNativeTarget "XVRDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +676,7 @@
 				F5FD68191DBDEEBF002006AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
