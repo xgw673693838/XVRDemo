@@ -43,7 +43,6 @@
     _VRPlayerView.enableCardboardButton = YES;
     _VRPlayerView.enableFullscreenButton = YES;
 //    [_VRPlayerView loadFromUrl:[NSURL   URLWithString:@"http://120.25.246.21/vrMobile/travelVideo/zhejiang_xuanchuanpian.mp4"]];
-    // @"http://120.25.246.21/vrMobile/travelVideo/beijing_congzhenwaibozishu.mp4"
 }
 
 - (IBAction)ChangedURLSwitch:(UISwitch *)sender {
