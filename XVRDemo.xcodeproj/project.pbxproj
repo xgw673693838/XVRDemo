@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4683D6B9DB4F8CB6038AAC66 /* libPods-XVRDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6EB47A63BC19FC7A697A15 /* libPods-XVRDemo.a */; };
+		F51379161DC5D013009A91F0 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51379151DC5D013009A91F0 /* VideoView.m */; };
 		F5A0EAAE1DBE17540075B80E /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = F5A0EAAD1DBE17540075B80E /* podfile */; };
 		F5A0EAB01DBE175B0075B80E /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = F5A0EAAF1DBE175B0075B80E /* podfile */; };
 		F5A0EAB71DBE1DF40075B80E /* PlayControlBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A0EAB61DBE1DF40075B80E /* PlayControlBar.m */; };
@@ -44,6 +45,8 @@
 		4C6EB47A63BC19FC7A697A15 /* libPods-XVRDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XVRDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A0A17F30759431655E80CC /* Pods-XVRDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XVRDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XVRDemo/Pods-XVRDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B1B17A95418BDB76F8B22E80 /* Pods-XVRDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XVRDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XVRDemo/Pods-XVRDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F51379141DC5D013009A91F0 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		F51379151DC5D013009A91F0 /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
 		F5A0EAAD1DBE17540075B80E /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 		F5A0EAAF1DBE175B0075B80E /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 		F5A0EAB51DBE1DF40075B80E /* PlayControlBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayControlBar.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 		F5A0EAB21DBE17FC0075B80E /* PublicView */ = {
 			isa = PBXGroup;
 			children = (
+				F51379141DC5D013009A91F0 /* VideoView.h */,
+				F51379151DC5D013009A91F0 /* VideoView.m */,
 				F5A0EAB51DBE1DF40075B80E /* PlayControlBar.h */,
 				F5A0EAB61DBE1DF40075B80E /* PlayControlBar.m */,
 			);
@@ -415,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51379161DC5D013009A91F0 /* VideoView.m in Sources */,
 				F5FD67EF1DBDEEBE002006AD /* ViewController.m in Sources */,
 				F5FD67EC1DBDEEBE002006AD /* AppDelegate.m in Sources */,
 				F5FD67E91DBDEEBE002006AD /* main.m in Sources */,
